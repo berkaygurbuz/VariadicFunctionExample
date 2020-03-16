@@ -3,8 +3,8 @@
 inside a couple of string.
 
 Example:
-FindSum(char * count,"Omer demir ,Berkay Gürbüz ,Seyhmus Askar",100,95,20);
-/*coded by berkay gürbüz*/
+FindSum(char * count,"Omer demir ,Berkay GÃ¼rbÃ¼z ,Seyhmus Askar",100,95,20);
+//coded by berkay gÃ¼rbÃ¼z//
 */
 #include <stdio.h>
 #include <stdarg.h>		/* va_list, va_start, va_arg, va_end */
@@ -63,12 +63,11 @@ float findAvg(char *text,...){
 	}
 	
 	va_end(ap); 
-	return float(sum) / float(tempCount); 	//return avarage of the scores.
+	return ((float)(sum) / (float)(tempCount)); 	//return avarage of the scores.
 }
 int main(void){
 	
 	printf("\n\nAverage = %.2f",findAvg("John Walker,Adam Micheal,Alan Smith,Berkay Gurbuz",120, 95,20, 58)); 
-	/*coded by berkay gürbüz*/
+	/*coded by berkay gÃ¼rbÃ¼z*/
 	return 0;
 }
-
